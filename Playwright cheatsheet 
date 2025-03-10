@@ -1,0 +1,38 @@
+/*Category	Code Example
+Setup and Installation	        :   npm init playwright@latest
+Basic Test Structure            :   js<br>import { test, expect } from '@playwright/test';<br>test('Basic Test', async ({ page }) => {<br> await page.goto('https://example.com');<br> await page.click('text=Some button');<br> await expect(page).toHaveURL('https://example.com/success');<br>});
+Page Navigation	                :   await page.goto('https://example.com');
+Wait for Navigation             :   await page.goto('https://example.com', { waitUntil: 'networkidle' });
+Wait for DOM Content Loaded 	:   await page.goto('https://example.com', { waitUntil: 'domcontentloaded' });
+Locators                        :	const element = page.locator('css=selector');
+Locators by Text                :	const element = page.locator('text=Login');
+Locators by Role                :	const button = page.locator('button', { name: 'Submit' });
+Clicking                        :	await page.locator('button').click();
+Filling Form Fields             :	await page.locator('#username').fill('myUsername');
+                                :   await page.locator('#password').fill('myPassword');
+Typing Text	                    :   await page.locator('#inputField').type('some text');
+Pressing a Key              	:   await page.locator('#inputField').press('Enter');
+Wait for Visibility         	:   await page.locator('#element').waitFor({ state: 'visible' });
+Wait for Element to Appear      :	await page.waitForSelector('#element');
+Wait for Element to be Hidden   :	await page.locator('#element').waitFor({ state: 'hidden' });
+Wait for Navigation             :   await page.waitForNavigation();
+Check URL                       :	await expect(page).toHaveURL('https://example.com');
+Check Text Content          	:   await expect(page.locator('h1')).toHaveText('Welcome');
+Check Element Visibility        :	await expect(page.locator('button')).toBeVisible();
+Check Element State         	:   await expect(page.locator('button')).toBeEnabled();
+Take Screenshot                 :	await page.screenshot({ path: 'screenshot.png' });
+Start Video Recording           :	const context = await browser.newContext({ recordVideo: { dir: 'videos/' } });
+Stop Video Recording            :	await context.close();
+Launch Browser                  :	const browser = await chromium.launch(); // or firefox / webkit
+Create New Browser Context      :	const context = await browser.newContext();
+New Page                        :	const page = await context.newPage();
+Close Browser                   :	await browser.close();
+Multiple Pages in One Context   :	const page1 = await context.newPage();
+                                    const page2 = await context.newPage();
+Multiple Browser Contexts       :	const context1 = await browser.newContext();
+                                :   const context2 = await browser.newContext();
+Handle Alert                    :	js<br>page.on('dialog', dialog => {<br> console.log(dialog.message());<br> dialog.accept();<br>});
+Run with Debugging              :	npx playwright test --headed --debug
+Print Logs                      :	console.log(await page.title());
+Close Page                      :	await page.close();
+Close Context                   :	await context.close();

@@ -1,0 +1,29 @@
+Locating single element
+-------------------------
+/*Locating elements using three methods 
+------------------------------------------
+1) properties 
+2) CSS
+3) x PATH */
+link/button 
+---------------
+/* await.page.locator('locator').click()
+await page .click('locator');
+
+if it's input box
+------------
+await page .locator('locator').fill('value');
+
+await page .locator('locator').type('value');
+
+we cana also use 
+------------------
+await page.fill ('locator', 'value ')
+
+await page.type('locator','value')
+
+//Loatingmultiple elements 
+
+const elements = await page. $$(locator)
+
+

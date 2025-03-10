@@ -1,0 +1,19 @@
+
+  {
+    "name": "tests",
+    "version": "1.0.0",
+    "main": "Assertions.spec.js",
+    "scripts": {
+      "clean-report": "rm -rf playwright-report",
+      "test": "npm run clean-report && npx playwright test",
+      "original-test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+      "@playwright/test": "^1.19.0"
+    }
+  }
+  
