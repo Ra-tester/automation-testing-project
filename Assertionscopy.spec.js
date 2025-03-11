@@ -75,7 +75,7 @@ element is enabled or disabled ( if the element is enabled only we can perorm se
     }, { timeout: 60000 }); // Increase timeout to 60 seconds
 
 
-    /*onst { test, expect } = require('@playwright/test');
+    const { test, expect } = require('@playwright/test');
 
     test('Assertions', async ({ page }) => {
       // Navigate to the registration page
