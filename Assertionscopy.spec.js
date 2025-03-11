@@ -1,4 +1,4 @@
-/* it is used to perform validation in the webpage
+/*it is used to perform validation in the webpage
 await expect(page).toHaveURL()          :   Page has a URL
 await expect(page).toHaveTitle()        :	Page has a title
 await expect(locator).toBeVisible()     :	Element is visible
@@ -14,7 +14,7 @@ await expect(locator).to HaveCount()    :   List of element has given length*/
 
         await page.goto('https://demo.nopcommerce.com/register') // click on the login button- by property 
 
-    /*verify  Page has a URL
+    verify  Page has a URL
     await expect(page).toHaveURL('https://demo.nopcommerce.com/register') ;
 
      Verify the page has title
@@ -59,20 +59,20 @@ element is enabled or disabled ( if the element is enabled only we can perorm se
 
     //await expect(locator).toContainText()	//Element contains text// in this we can pass the partial value of the ext 
     const Partialtext  = await page.locator('.page-title h1')
-    await expect(Partialtext).toContainText('Reg')*/
+    await expect(Partialtext).toContainText('Reg')
 
-    /*expect(locator).toHaveValue(value) :input has value 
+    expect(locator).toHaveValue(value) :input has value 
 
      const inputvalue= page.locator('#Email')
      await inputvalue.fill('test@demo.com')
-     await expect(inputvalue).toHaveValue('test@demo.com')*/
+     await expect(inputvalue).toHaveValue('test@demo.com')
 
 
-    /*const inputvalue = page.locator('//*[@id="Email"]');
+    const inputvalue = page.locator('//*[@id="Email"]');
     await inputvalue.waitFor({ state: 'visible' }); // Wait for the element to be visible
     await inputvalue.fill('test@demo.com');
     await expect(inputvalue).toHaveValue('test@demo.com');
-    }, { timeout: 60000 }); // Increase timeout to 60 seconds*/
+    }, { timeout: 60000 }); // Increase timeout to 60 seconds
 
 
     /*onst { test, expect } = require('@playwright/test');
@@ -94,7 +94,7 @@ element is enabled or disabled ( if the element is enabled only we can perorm se
       await expect(inputvalue).toHaveValue('test@demo.com');
     }, { timeout: 120000 }); // Increase the timeout to 120 seconds*/
 
-    /*const { test, expect } = require('@playwright/test');
+    const { test, expect } = require('@playwright/test');
 
     test('Assertions', async ({ page }) => {
   await page.goto('https://demo.nopcommerce.com/register', { waitUntil: 'networkidle' });
