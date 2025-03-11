@@ -2,9 +2,9 @@
 /*selectOption({ label: 'India' });" this is the function for drop down"
 scrollIntoViewIfNeeded();// if the view is not visible 
 
+//Approach 1
 
-
-/*import { test,expect } from "@playwright/test";
+import { test,expect } from "@playwright/test";
 test('dropdown', async({page})=>{
 
     await page.goto('https://testautomationpractice.blogspot.com/');
@@ -15,9 +15,9 @@ test('dropdown', async({page})=>{
             //Label: This should match the visible text of the option, e.g., France.
 
 // Value: This should match the value attribute of the option, e.g., france.   
-});*/
+});
 
-
+Approach 2
 /*import { test, expect } from "@playwright/test";
 
 test('dropdown', async ({ page }) => {
