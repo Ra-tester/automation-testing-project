@@ -1,4 +1,4 @@
-/*const { test, expect } = require('@playwright/test');
+const { test, expect } = require('@playwright/test');
 
 test('Assertions', async ({ page }) => {
   await page.setExtraHTTPHeaders({
@@ -24,7 +24,7 @@ test('Assertions', async ({ page }) => {
   await expect(inputvalue).toHaveValue('test@demo.com');
 }, { timeout: 120000 }); // Increase timeout to 120 seconds*/
 
-/*mport { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 test('Assertions', async ({ page }) => {
   await page.goto('https://demo.nopcommerce.com/register', { waitUntil: 'networkidle' });
@@ -43,7 +43,7 @@ test('Assertions', async ({ page }) => {
 }, { timeout: 120000 }); // Increase timeout to 120 seconds*/
 
 
-/*import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 test('Assertions', async ({ page }) => {
   // Navigate to the registration page
@@ -62,7 +62,7 @@ test('Assertions', async ({ page }) => {
   await expect(firstNameInput).toHaveValue('Raichel');
 },{ timeout: 120000 }); // Increase timeout to 120 seconds*/
 
-/*import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 test('Assertions', async ({ page }) => {
   // Navigate to the registration page
@@ -81,7 +81,7 @@ test('Assertions', async ({ page }) => {
   await expect(firstNameInput).toHaveValue('Raichel');
 },{ timeout: 120000 }); // Optional: you can adjust this timeout as needed*/
 
-/*import { test, expect } from '@playwright/test';
+mport { test, expect } from '@playwright/test';
 
 test('Assertions', async ({ page }) => {
   // Navigate to the registration page and wait for the network to be idle
@@ -100,7 +100,7 @@ test('Assertions', async ({ page }) => {
   await expect(firstNameInput).toHaveValue('Raichel');
 },{ timeout: 120000 }); // Optional: you can adjust this timeout as needed*/
 
-/*import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 test('Assertions', async ({ page }) => {
   try {
@@ -123,7 +123,7 @@ test('Assertions', async ({ page }) => {
   }
 }, { timeout: 180000 });*/
 
-/*import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 test('Assertions', async ({ page }) => {
   try {
@@ -154,7 +154,7 @@ test('Assertions', async ({ page }) => {
     console.error('Test failed:', error);
   }
 }, { timeout: 180000 });*/
-/*import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 test('Assertions', async ({ page }) => {
   try {
@@ -186,7 +186,7 @@ test('Assertions', async ({ page }) => {
   }
 }, { timeout: 180000 });*/
 
-/*import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 test('Assertions', async ({ page }) => {
   try {
